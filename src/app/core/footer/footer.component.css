@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  min-height: 15vh;
+  background-color: brown;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
