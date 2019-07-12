@@ -1,1 +1,17 @@
-<p>tareas works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Tareas</h3>
+        </div>
+        <ind-nueva-tarea class="col-6" (nuevaTarea)='onNuevaTarea($event)'></ind-nueva-tarea>
+        <div class="col-6">
+            <ind-item-tarea *ngFor="let tarea of aTareas; let i = index" 
+            [tarea]="tarea" [index]="i" (borrar)="onBorrarTarea($event)"></ind-item-tarea>  
+        </div>
+    </div>
+</div>
+
+
+
+
+

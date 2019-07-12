@@ -1,0 +1,14 @@
+<h5>Nueva tarea</h5>
+<div class="form-group">
+  <label for="desc">Descripción</label>
+  <input type="text" class="form-control" name="desc" id="desc"
+  [(ngModel)]="tarea.descripcion" placeholder="Describe aquí tu tarea">
+</div>
+<div class="form-group">
+    <label for="resp">Responsable</label>
+    <input type="text" class="form-control" name="resp" id="resp" 
+    [(ngModel)]="tarea.responsable"  placeholder="Persona que realizará la tarea">
+</div>
+<div>
+    <button (click)="onClick($event)" type="button" class="btn btn-primary">Guardar</button>
+</div>
