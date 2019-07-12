@@ -17,7 +17,7 @@ export class ItemTareaComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick() {
+  onClick(ev: Event) {
     this.borrar.next(this.index)
   }
 }
